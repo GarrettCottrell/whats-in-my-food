@@ -1,10 +1,10 @@
-<%= @foods[:totalHits] %>
+<%= @json[:totalHits] %>
 
-<% @foods.each_with_index do |food, index| %>
+<% @foods.first(10).each_with_index do |food, index| %>
     <ul class="food-<%= index %>">
-      <li class="UPC_Code"><%= park[:name] %>
-      <li class="description"><%= park[:description] %>
-      <li class="brand_owner"><%= park[:direction_info %>
-      <li class="ingredients"><%= park[:standard_hours] %>
+      <li class="description"><%= food.description %>
+      <li class="brandowner"><%= food.brand_owner %>
+      <li class="ingredients"><%= food.ingredients %>
+      <li class="gtinUpc"><%= food.upc %>
     </ul>
   <% end %>
