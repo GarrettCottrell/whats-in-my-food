@@ -1,0 +1,10 @@
+<%= @foods[:totalHits] %>
+
+<% @foods.each_with_index do |food, index| %>
+    <ul class="food-<%= index %>">
+      <li class="UPC_Code"><%= park[:name] %>
+      <li class="description"><%= park[:description] %>
+      <li class="brand_owner"><%= park[:direction_info %>
+      <li class="ingredients"><%= park[:standard_hours] %>
+    </ul>
+  <% end %>
