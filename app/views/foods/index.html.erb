@@ -1,4 +1,3 @@
-<% require 'pry'; binding.pry %>
 <% @foods.first(10).each_with_index do |food, index| %>
     <ul class="food-<%= index %>">
       <li class="description"><%= food.description %>
